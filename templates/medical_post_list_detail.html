@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Medical Detail</title>
+      <link rel="stylesheet" type="text/css" href="{%static 'css/bootstrap.css/'%}" />
+</head>
+<body>
+
+<style>
+    body{
+        background-color: #720979;
+    }
+    a{
+        text-decoration: none;
+    }
+    button{
+        background-color: #f5c2c7;
+    }
+</style>
+
+<center>
+<div class="card" style="width: 18rem;">
+    <br>
+    <button><a href="/medshows/">На главную</a></button>
+    <br>
+  <img src="{{shows.images.url}}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{shows.title}}</h5>
+    <p class="card-text">{{shows.description}}</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">{{shows.type}}</li>
+    <li class="list-group-item">{{shows.timeadd}}</li>
+  </ul>
+  <div class="card-body">
+      <!-- Указать с ключом shows.id-->
+      <a href="/medshows/{{shows.id}}/update/">Обновить</a>
+      <a href="/medshows/{{shows.id}}/delete/">Удалить</a>
+    
+  </div>
+</div>
+</center>
+</body>
+</html>

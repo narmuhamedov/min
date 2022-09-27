@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Med Show</title>
+     <link rel="stylesheet" type="text/css" href="{%static 'css/bootstrap.css/'%}" />
+</head>
+<body>
+<style>
+    body{
+        background-color: #720979;
+    }
+    .form-label{
+        color: whitesmoke;
+    }
+</style>
+<center>
+<div class="container forms-form" >
+    <div class="mb-3">
+        <div class="row gy-6">
+
+<form action="/add-shows/" method="post"  enctype="multipart/form-data">
+    {%csrf_token%}
+    <div class="col-9">
+        <br>
+        <label class="form-label">{{med_form.as_p}}</label>
+    <input class="form-control" type="submit" value="ADD NEW MED SHOW" />
+    </div>
+</form>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+</center>
+</body>
+</html>
