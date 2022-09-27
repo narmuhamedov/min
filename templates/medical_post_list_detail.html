@@ -25,19 +25,19 @@
     <br>
     <button><a href="/medshows/">На главную</a></button>
     <br>
-  <img src="{{shows.images.url}}" class="card-img-top" alt="...">
+  <img src="{{object.images.url}}" class="card-img-top" alt="...">
   <div class="card-body">
-    <h5 class="card-title">{{shows.title}}</h5>
-    <p class="card-text">{{shows.description}}</p>
+    <h5 class="card-title">{{object.title}}</h5>
+    <p class="card-text">{{object.description}}</p>
   </div>
   <ul class="list-group list-group-flush">
-    <li class="list-group-item">{{shows.type}}</li>
-    <li class="list-group-item">{{shows.timeadd}}</li>
+    <li class="list-group-item">{{object.type}}</li>
+    <li class="list-group-item">{{object.timeadd}}</li>
   </ul>
   <div class="card-body">
       <!-- Указать с ключом shows.id-->
-      <a href="/medshows/{{shows.id}}/update/">Обновить</a>
-      <a href="/medshows/{{shows.id}}/delete/">Удалить</a>
+      <a href="/medshows/{{object.id}}/update/">Обновить</a>
+      <a href="/medshows/{{object.id}}/delete/">Удалить</a>
     
   </div>
 </div>
