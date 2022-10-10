@@ -20,7 +20,7 @@ class ParserFormView(FormView):
         form = self.form_class(request.POST)
         if form.is_valid():
             form.parser_data()
-            return HttpResponse('parser good')
+            return HttpResponse('parser good <a href= "/admin">В ПУ</a> ')
             # return redirect(reversed("parse:list_objects"))
         else:
             return super(ParserFormView, self).post(request, *args, **kwargs)
