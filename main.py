@@ -1,16 +1,85 @@
-# This is a sample Python script.
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+import turtle
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+pen = turtle.Turtle()
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+def ring(col, rad):
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+
+	pen.fillcolor(col)
+
+
+	pen.begin_fill()
+
+
+	pen.circle(rad)
+
+
+	pen.end_fill()
+
+
+pen.up()
+pen.setpos(-35, 95)
+pen.down
+ring('brown', 15)
+
+# Draw second ear
+pen.up()
+pen.setpos(35, 95)
+pen.down()
+ring('brown', 15)
+
+
+pen.up()
+pen.setpos(0, 35)
+pen.down()
+ring('white', 40)
+
+##### Draw eyes black #####
+
+# Draw first eye
+pen.up()
+pen.setpos(-18, 75)
+pen.down
+ring('brown', 8)
+
+# Draw second eye
+pen.up()
+pen.setpos(18, 75)
+pen.down()
+ring('brown', 8)
+
+##### Draw eyes white #####
+
+# Draw first eye
+pen.up()
+pen.setpos(-18, 77)
+pen.down()
+ring('white', 4)
+
+# Draw second eye
+pen.up()
+pen.setpos(18, 77)
+pen.down()
+ring('white', 4)
+
+##### Draw nose #####
+pen.up()
+pen.setpos(0, 55)
+pen.down
+ring('black', 5)
+
+##### Draw mouth #####
+pen.up()
+pen.setpos(0, 55)
+pen.down()
+pen.right(90)
+pen.circle(5, 180)
+pen.up()
+pen.setpos(0, 55)
+pen.down()
+pen.left(360)
+pen.circle(5, -180)
+pen.hideturtle()
