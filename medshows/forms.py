@@ -5,3 +5,4 @@ class MedShowForm(forms.ModelForm):
     class Meta:
         model = models.MedicalShows
         fields = "__all__"
+
